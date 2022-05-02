@@ -55,7 +55,7 @@ parser.add_argument("-M", "--message", action="store", dest="message", default="
                     help="Message to publish")
 args = parser.parse_args()
 
-host = "a2ps877ygecemo-ats.iot.us-west-2.amazonaws.com"
+host = args.host
 rootCAPath = "root-ca-cert.pem"
 certificatePath = "{}.cert.pem".format(args.hass)
 privateKeyPath = "{}.private.key".format(args.hass)
